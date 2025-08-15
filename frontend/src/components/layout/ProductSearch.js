@@ -78,7 +78,7 @@ export default function ProductSearch() {
       try {
         const response = await fetch(
 
-            `/api/v1/products?page=${currentPage}&limit=${resPerPage}${keyword ? `&keyword=${encodeURIComponent(keyword)}` : ""}&price[gte]=${price[0]}&price[lte]=${price[1]}${category ? `&category=${encodeURIComponent(category)}` : ""}${rating > 0 ? `&rating=${rating}` : ""}`
+            `${process.env.REACT_APP_API_BASE_URL}/products?page=${currentPage}&limit=${resPerPage}${keyword ? `&keyword=${encodeURIComponent(keyword)}` : ""}&price[gte]=${price[0]}&price[lte]=${price[1]}${category ? `&category=${encodeURIComponent(category)}` : ""}${rating > 0 ? `&rating=${rating}` : ""}`
           );
 
         const data = await response.json();

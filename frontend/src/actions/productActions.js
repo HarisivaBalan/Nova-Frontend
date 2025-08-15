@@ -13,7 +13,7 @@ export const getProducts = (
   try {
     dispatch(productsRequest());
 
-    let link = `/api/v1/products?page=${page}&limit=${limit}`;
+    let link = `${process.env.REACT_APP_API_BASE_URL}/products?page=${page}&limit=${limit}`;
 
     if (keyword) {
       link += `&keyword=${encodeURIComponent(keyword)}`;
@@ -47,7 +47,7 @@ export const getProduct =id=> async(dispatch)=>{
     // get all the product details
     try{
         dispatch(productRequest())
-        const {data} = await axios.get(`/api/v1/product/${id}`);
+        const {data} = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/product/${id}`);
         dispatch(productSuccess(data))
     }
     catch(error)
@@ -68,7 +68,7 @@ export const createReview = (reviewData) => async (dispatch) => {
       },
     };
 
-    const { data } = await axios.put(`/api/v1/review`, reviewData, config);
+    const { data } = await axios.put(`${process.env.REACT_APP_API_BASE_URL}/review`, reviewData, config);
 
     dispatch(createReviewSuccess(data));
 
@@ -81,7 +81,7 @@ export const createReview = (reviewData) => async (dispatch) => {
 };
 export const getCategories = (page = 1, limit = 5) => async (dispatch) => {
   try {
-    const { data } = await axios.get(`/api/v1/categories?page=${page}&limit=${limit}`);
+    const { data } = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/categories?page=${page}&limit=${limit}`);
 
     // console.log("✅ getCategories API Response:", data); // Debug API response
 

@@ -84,7 +84,7 @@ export default function Home() {
     const fetchCategoryProducts = async () => {
       try {
         const { data } = await axios.get(
-          `/api/v1/products?category=${encodeURIComponent(selectedCategory)}&limit=${resPerPage}&page=${overlayPage}`
+          `${process.env.REACT_APP_API_BASE_URL}/products?category=${encodeURIComponent(selectedCategory)}&limit=${resPerPage}&page=${overlayPage}`
         );
         setCategoryProducts(data.products);
         setTotalProducts(data.count);

@@ -33,7 +33,7 @@ export default function Search() {
             }
 
             try {
-                const res = await fetch(`/api/v1/products/suggestions?query=${searchQuery}&limit=10`);
+                const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/products/suggestions?query=${searchQuery}&limit=10`);
                 const data = await res.json();
 
                 if (!data.suggestions || data.suggestions.length === 0) {
@@ -66,7 +66,7 @@ export default function Search() {
         }
 
         try {
-            const response = await fetch(`/api/v1/products?page=1&limit=9&keyword=${encodeURIComponent(keyword)}`);
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/products?page=1&limit=9&keyword=${encodeURIComponent(keyword)}`);
             const data = await response.json();
 
             if (!data.products || data.products.length === 0){
@@ -93,7 +93,7 @@ export default function Search() {
             if (!keywordFromURL) return; // ✅ Fix: Use extracted `keywordFromURL`
 
             try {
-                const response = await fetch(`/api/v1/products?page=${currentPage}&limit=6&keyword=${encodeURIComponent(keywordFromURL)}`);
+                const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/products?page=${currentPage}&limit=6&keyword=${encodeURIComponent(keywordFromURL)}`);
                 const data = await response.json();
                 //console.log("🔹 API Response in Frontend:", data);
                 if (data.totalProducts) {

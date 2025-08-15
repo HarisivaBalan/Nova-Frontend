@@ -4,7 +4,7 @@ import { createOrderFail, createOrderRequest, createOrderSuccess, orderDetailFai
 export const createOrder = order =>async(dispatch)=>{
     try{
         dispatch(createOrderRequest())
-        const {data}=await axios.post(`/api/v1/order/new`,order)
+        const {data}=await axios.post(`${process.env.REACT_APP_API_BASE_URL}/order/new`,order)
         dispatch(createOrderSuccess(data))
     }
     catch(error){
@@ -14,7 +14,7 @@ export const createOrder = order =>async(dispatch)=>{
 export const userOrders = ()=> async(dispatch)=>{
     try{
         dispatch(userOrderRequest())
-        const {data}=await axios.get(`/api/v1/myorders`)
+        const {data}=await axios.get(`${process.env.REACT_APP_API_BASE_URL}/myorders`)
         dispatch(userOrderSuccess(data))
     }
     catch(error){
@@ -24,7 +24,7 @@ export const userOrders = ()=> async(dispatch)=>{
 export const orderDetail = id=> async(dispatch)=>{
     try{
         dispatch(orderDetailRequest())
-        const {data}=await axios.get(`/api/v1/order/${id}`)
+        const {data}=await axios.get(`${process.env.REACT_APP_API_BASE_URL}/order/${id}`)
         dispatch(orderDetailSuccess(data))
     }
     catch(error){
