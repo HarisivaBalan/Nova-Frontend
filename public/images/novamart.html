@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-container">
+          <!-- Logo -->
+          <a class="navbar-brand navbar-logo" href="#">
+            <img src="logol.png" alt="Logo">
+          </a>
+
+          <!-- Search Box -->
+          <div class="search-box mx-3">
+            <button type="button">
+              <i class="fas fa-search"></i>
+            </button>
+            <input type="search" placeholder="Search products, brands, and more" class="form-control">
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Product 1</a>
+              <a class="dropdown-item" href="#">Brand 1</a>
+              <a class="dropdown-item" href="#">More options...</a>
+            </div>
+          </div>
+
+          <!-- Profile and Cart -->
+          <div class="profile-cart d-flex align-items-center">
+            <!-- Profile Dropdown -->
+            <div class="profile-dropdown me-3">
+              <a class="nav-link" href="#">
+                <i class="fas fa-circle-user"></i> Login
+              </a>
+              <div class="dropdown-menu">
+                <a href="#">New User</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">My Orders</a>
+              </div>
+            </div>
+            <div class="cart">
+            <!-- Cart -->
+            <a class="nav-link" href="#">
+              <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--cards--> 
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="image-slider">
+          <img src="./Mastercard-Symbol.jpg" alt="Product Image 1" class="active">
+          <img src="./pAYNEW.png" alt="Product Image 2">
+          <img src="./visa-icon-2048x1313-o6hi8q5l.png" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">
+          <i class="fa-thin fa-heart"></i>
+          </div>
+        </div>
+        <div class="card-details">
+          <h3>ZOUK</h3>
+          <p>Tidal Wave Lunch Bag</p>
+          <div class="price-info">
+            <span class="price">₹599</span>
+            <span class="original-price">₹1,498</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist"style="color:black !important;">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-slider">
+          <img src="./ProductImage1.jpg" alt="Product Image 1" class="active">
+          <img src="./ProductImage2.jpg" alt="Product Image 2">
+          <img src="./ProductImage3.jpg" alt="Product Image 3">
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="wishlist">❤</div>
+        </div>
+        <div class="card-details">
+          <h3>BrandX</h3>
+          <p>Modern Laptop Backpack</p>
+          <div class="price-info">
+            <span class="price">₹999</span>
+            <span class="original-price">₹2,499</span>
+            <span class="discount">(60% off)</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add more cards here -->
+    </div>
+  
+    <footer class="footer">
+      <div class="footer-container">
+          <!-- Logo and Description -->
+          <div class="footer-logo">
+              <h2><span class="icon">&#127869;</span>Nova Mart</h2>
+              <p>
+                Your one-stop destination for premium products at unbeatable prices
+              </p>
+              <div class="social-icons1">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+          </div>
+  
+          <!-- Navigation Links -->
+          <div class="footer-links">
+              <div class="pages">
+                  <h4>Pages</h4>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Orders</a></li>
+                      
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Delivery</a></li>
+                  </ul>
+              </div>
+              <div class="utility-pages">
+                  <h4>Utility Pages</h4>
+                  <ul>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms and Conditions</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">404 Not Found</a></li>
+                      <li><a href="#">Licenses</a></li>
+                      <li><a href="#">Return and Refund Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <!-- Instagram Feed -->
+          <div class="footer-instagram">
+              <h4>Payment Options</h4>
+              <div class="instagram-images">
+                  <img src="./visa-icon-2048x1313-o6hi8q5l.png" alt="VISA">
+                  <img src="./Mastercard-Symbol.jpg" alt="MASTER">
+                  <img src="./pAYNEW.png" alt="PAYPAL">
+                  <img src="./Google-Pay-hero_1.webp" alt="GPAY">
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>Copyright © 2023 Hashtag Developer. All Rights Reserved</p>
+      </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Image slider logic for all cards
+      
+
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const images = card.querySelectorAll('.image-slider img');
+        const dots = card.querySelectorAll('.loading-dots span');
+        let currentIndex = 0;
+        let intervalId;
+  
+        const changeImage = () => {
+          images[currentIndex].classList.remove('active');
+          dots[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add('active');
+          dots[currentIndex].classList.add('active');
+        };
+  
+        const imageSlider = card.querySelector('.image-slider');
+        imageSlider.addEventListener('mouseover', () => {
+          intervalId = setInterval(changeImage, 2000);
+        });
+  
+        imageSlider.addEventListener('mouseout', () => {
+          clearInterval(intervalId);
+        });
+  
+        const wishlistIcon = card.querySelector('.wishlist');
+        wishlistIcon.addEventListener('click', () => {
+          wishlistIcon.classList.toggle('active');
+        });
+      });
+      
+    </script>
+  </body>
+</html>

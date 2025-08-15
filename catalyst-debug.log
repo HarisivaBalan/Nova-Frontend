@@ -1,0 +1,40 @@
+[debug] [2025-05-28T14:54:53.379Z] : 
+[debug] [2025-05-28T14:54:53.381Z] : ----------------------------------------------------------------------
+[debug] [2025-05-28T14:54:53.381Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js init
+[debug] [2025-05-28T14:54:53.381Z] : CLI Version:  1.18.1
+[debug] [2025-05-28T14:54:53.381Z] : Platform:     win32
+[debug] [2025-05-28T14:54:53.381Z] : Node Version: v22.12.0
+[debug] [2025-05-28T14:54:53.382Z] : Time:         Wed May 28 2025 20:24:53 GMT+0530 (India Standard Time)
+[debug] [2025-05-28T14:54:53.382Z] : ----------------------------------------------------------------------
+[debug] [2025-05-28T14:54:53.382Z] : 
+[debug] [2025-05-28T14:54:53.800Z] : > authorizing via signed-in user option
+[debug] [2025-05-28T14:54:53.800Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.projects.ALL","ZohoCatalyst.project.import.CREATE"]
+[info] [2025-05-28T14:54:53.812Z] : 
+      ___  
+      \  \     ____           _             _                 _   
+   ___ \  \   / ___|   __ _  | |_    __ _  | |  _   _   ___  | |_ 
+  /  / /  /  | |      / _` | | __|  / _` | | | | | | | / __| | __|
+ /  / /__/   | |___  | (_| | | |_  | (_| | | | | |_| | \__ \ | |_ 
+ \  \         \____|  \__,_|  \__|  \__,_| |_|  \__, | |___/  \__|
+  \__\                                          |___/       
+
+You're about to initialize a Catalyst project in this directory:
+
+  D:\Novamart\fronte
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2025-05-28T14:54:53.821Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/orgs 
+
+[debug] [2025-05-28T14:54:54.853Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 28 May 2025 14:55:02 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-05-28T14:54:54.865Z] : i Setting up a new default project for this folder
+
+[debug] [2025-05-28T14:54:54.866Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project 
+
+[debug] [2025-05-28T14:54:55.181Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 28 May 2025 14:55:03 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
