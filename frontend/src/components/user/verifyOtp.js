@@ -20,7 +20,7 @@ export default function VerifyOtp() {
     const handleVerify = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("/api/v1/verify-otp", { email, otp });
+            const { data } = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/verify-otp`, { email, otp });
             dispatch(verifyOtpSuccess( data.user));
             toast.success("OTP Verified Successfully", {
                 position: "top-center",
