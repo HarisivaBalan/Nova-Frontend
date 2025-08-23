@@ -50,7 +50,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
         useEffect(() => {
             const sendOtp = async () => {
                 try {
-                    await axios.post("/api/v1/send-otp", { email: registeredEmail });
+                    await axios.post(`${process.env.REACT_APP_API_BASE_URL}/send-otp`, { email: registeredEmail });
                     toast.success(
                         <div className="toast-center">
                             <span className="toast-icon">✅</span>
