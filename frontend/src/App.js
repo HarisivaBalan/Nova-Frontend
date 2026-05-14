@@ -89,7 +89,7 @@ useEffect(() => {
   async function getStripeApiKey() {
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_API_BASE_URL}/stripeapikey`,  // ✅ Full URL + correct endpoint
+        `${process.env.REACT_APP_API_BASE_URL}/stripeapi`,  // ✅ Full URL + correct endpoint
         {
           withCredentials: true,
         }
