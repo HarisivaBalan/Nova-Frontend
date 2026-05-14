@@ -40,7 +40,12 @@ import OrderSuccess from './components/cart/OrderSuccess';
 import UserOrder from './components/order/UserOrder';
 import OrderDetail from './components/order/OrderDetail';
 import { useDispatch } from 'react-redux';
+
 import Wishlist from './components/layout/Fav';
+
+
+import MyProduct from './components/supplier/supplyHome';
+import BecomeSupplier from "./components/supplier/becomeSupplier";
 function App() {
   const [stripeApikey,setStripeApiKey]=useState("");
   const dispatch=useDispatch();
@@ -162,6 +167,15 @@ useEffect(() => {
                               />
 
                       <Route path="/wishlist" element={<Wishlist/>}></Route>
+                      <Route path="/myproducts"element={<ProtectedRoute><MyProduct/></ProtectedRoute>}/>
+                      <Route
+                            path="/become-supplier"
+                            element={
+                              <ProtectedRoute>
+                                <BecomeSupplier />
+                              </ProtectedRoute>
+                            }
+                          />
                 </Routes>
             </div>
           

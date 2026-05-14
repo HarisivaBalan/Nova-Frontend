@@ -1525,3 +1525,32 @@ input {
 }
 
 
+
+
+
+.become-supplier-page {
+  min-height: calc(100vh - 150px); /* leave space for header+footer */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* use center if you want vertical centering */
+  padding: 2rem 1rem 3rem;
+}
+
+.become-supplier-card-wrapper {
+  width: 100%;
+  max-width:1200px;        /* form width on large screens */
+}
+
+/* already suggested before, keep or adjust */
+.image-preview-wrapper {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
