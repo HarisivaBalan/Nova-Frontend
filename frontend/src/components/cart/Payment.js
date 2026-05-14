@@ -136,7 +136,10 @@ export default function Payment() {
     
         try {
             // Send payment request to backend
-            const { data } = await axios.post("/api/v1/payment/process", paymentData);
+            const { data } = await axios.post(
+                    `${process.env.REACT_APP_API_BASE_URL}/payment/process`,
+                        paymentData
+                );
             const clientSecret = data.client_secret;
     
             // Use Stripe to confirm the payment
