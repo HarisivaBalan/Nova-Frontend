@@ -88,9 +88,12 @@ useEffect(() => {
 useEffect(() => {
   async function getStripeApiKey() {
     try {
-      const { data } = await axios.get('/api/v1/stripeapi', {
-        withCredentials: true,
-      });
+      const { data } = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/stripeapikey`,  // ✅ Full URL + correct endpoint
+        {
+          withCredentials: true,
+        }
+      );
       setStripeApiKey(data.stripeApiKey);
       console.log("Fetched Stripe Key:", data.stripeApiKey);
     } catch (error) {
@@ -104,26 +107,6 @@ useEffect(() => {
   }
 }, [user]);
 
-
-// useEffect(() => {
-//   store.dispatch(loadUser()); // properly dispatch the thunk
-// }, [dispatch]);
-// useEffect(() => {
-//   async function getStripeApiKey() {
-//     try {
-//       const { data } = await axios.get('/api/v1/stripeapi', {
-//         withCredentials: true
-//       });
-      
-//       console.log("Stripe API Key: ", data.stripeApiKey);
-//       setStripeApiKey(data.stripeApiKey);
-//     } catch (error) {
-//       console.error("Stripe API key fetch error:", error);
-//     }
-//   }
-
-//   if (user?.user) getStripeApiKey();
-// }, [user]);
   return (
     <Router>
     <div className="App">
